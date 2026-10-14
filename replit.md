@@ -1,9 +1,12 @@
-# [Project name]
+# HerancaJava
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Ambiente de programação Java pronto para executar `main.java`, com JDK, compilador e Maven.
 
 ## Run & Operate
 
+- `java main.java` — executar o arquivo principal pelo workflow
+- `javac main.java` — compilar o arquivo principal
+- `mvn -version` — conferir o Maven instalado
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
