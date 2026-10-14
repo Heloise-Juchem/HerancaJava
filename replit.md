@@ -4,8 +4,7 @@ Ambiente de programação Java pronto para executar `main.java`, com JDK, compil
 
 ## Run & Operate
 
-- `java main.java` — executar o arquivo principal pelo workflow
-- `javac main.java` — compilar o arquivo principal
+- `javac -sourcepath . -d out main.java && java -cp out main` — compilar e executar o arquivo principal e os fontes dos pacotes usados por ele
 - `mvn -version` — conferir o Maven instalado
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
 - `pnpm run typecheck` — full typecheck across all packages

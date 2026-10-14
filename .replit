@@ -24,12 +24,12 @@ args = "Executar Java (main.java)"
 name = "Executar Java (main.java)"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "java main.java"
-
 [workflows.workflow.metadata]
 outputType = "console"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "rm -rf out && mkdir -p out && javac -sourcepath . -d out main.java && java -cp out main"
 
 [agent]
 stack = "PNPM_WORKSPACE"
